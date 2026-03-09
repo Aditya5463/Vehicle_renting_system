@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register — DriveEase</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body data-page="register">
+  <nav>
+    <a class="nav-logo" href="index.html">🚗 DriveEase</a>
+    <div class="nav-links">
+      <a href="vehicles.html">Vehicles</a>
+      <a href="login.html">Login</a>
+      <a href="register.html" class="btn-nav active">Sign Up</a>
+    </div>
+  </nav>
+
+  <div class="auth-wrapper">
+    <div class="auth-card">
+      <div class="auth-logo">🚗 DriveEase</div>
+      <div class="auth-title">Create Account</div>
+      <div class="auth-sub">Join thousands of happy renters today</div>
+
+      <form id="registerForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label>Full Name</label>
+            <input id="name" type="text" placeholder="Aditya Shah" required>
+          </div>
+          <div class="form-group">
+            <label>Phone Number</label>
+            <input id="phone" type="tel" placeholder="9876543210" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Email Address</label>
+          <input id="email" type="email" placeholder="aditya@gmail.com" required>
+        </div>
+        <div class="form-group">
+          <label>Driving License Number</label>
+          <input id="license" type="text" placeholder="GJ123456" required>
+        </div>
+        <div class="form-group">
+          <label>Password</label>
+          <input id="password" type="password" placeholder="Min 6 characters" minlength="6" required>
+        </div>
+        <button type="submit" class="btn btn-primary btn-full">Create Account</button>
+      </form>
+
+      <div class="auth-link">Already have an account? <a href="login.html">Sign in</a></div>
+    </div>
+  </div>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>

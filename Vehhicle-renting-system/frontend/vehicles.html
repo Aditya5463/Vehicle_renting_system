@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Browse Vehicles — DriveEase</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body data-page="vehicles">
+  <nav>
+    <a class="nav-logo" href="index.html">🚗 DriveEase</a>
+    <div class="nav-links">
+      <a href="/">Home</a>
+      <a href="/vehicles.html" class="active">Vehicles</a>
+      <a href="/booking.html">My Bookings</a>
+      <span id="navUser" style="display:none;color:var(--text-muted);font-size:0.9rem;padding:0.5rem 1rem;"></span>
+      <a href="/login.html" id="navLogin">Login</a>
+      <a href="/register.html" class="btn-nav" id="navRegister">Sign Up</a>
+      <a href="#" class="btn-nav" id="navLogout" style="display:none" onclick="logout()">Logout</a>
+    </div>
+  </nav>
+
+  <section class="section">
+    <div class="section-header">
+      <div class="section-tag">Fleet</div>
+      <h2>Browse Our <span style="background:var(--gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Vehicles</span></h2>
+      <p>Click on any available vehicle to book it instantly</p>
+    </div>
+
+    <div class="filters">
+      <button class="filter-btn active" data-type="">All Vehicles</button>
+      <button class="filter-btn" data-type="Car">🚗 Cars</button>
+      <button class="filter-btn" data-type="SUV">🚙 SUVs</button>
+      <button class="filter-btn" data-type="Bike">🏍️ Bikes</button>
+      <button class="filter-btn" data-type="Scooter">🛵 Scooters</button>
+    </div>
+
+    <div class="vehicle-grid" id="vehicleGrid">
+      <div class="spinner"></div>
+    </div>
+  </section>
+
+  <!-- BOOKING MODAL -->
+  <div class="modal-overlay" id="bookingModal">
+    <div class="modal">
+      <div class="modal-header">
+        <div class="modal-title">Book Vehicle</div>
+        <button class="modal-close" onclick="closeModal()">✕</button>
+      </div>
+      <div class="vehicle-summary">
+        <div class="emo" id="modalVehicleEmoji">🚗</div>
+        <div>
+          <h3 id="modalVehicleName"></h3>
+          <p id="modalVehicleInfo"></p>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Pickup Date</label>
+          <input type="date" id="bookingDate">
+        </div>
+        <div class="form-group">
+          <label>Return Date</label>
+          <input type="date" id="returnDate">
+        </div>
+      </div>
+      <div class="price-calc" id="priceCalc" style="display:none"></div>
+      <button class="btn btn-primary btn-full" id="confirmBtn" onclick="confirmBooking()">Confirm Booking</button>
+    </div>
+  </div>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>

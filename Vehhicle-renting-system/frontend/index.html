@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DriveEase — Vehicle Renting System</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚗</text></svg>">
+</head>
+<body>
+  <nav>
+    <a class="nav-logo" href="index.html">🚗 DriveEase</a>
+    <div class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="vehicles.html">Vehicles</a>
+      <a href="booking.html">My Bookings</a>
+      <span id="navUser" style="display:none;color:var(--text-muted);font-size:0.9rem;padding:0.5rem 1rem;"></span>
+      <a href="login.html" id="navLogin">Login</a>
+      <a href="register.html" class="btn-nav" id="navRegister">Sign Up</a>
+      <a href="#" class="btn-nav" id="navLogout" style="display:none" onclick="logout()">Logout</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-badge fade-up">🏆 #1 Vehicle Rental Platform in Gujarat</div>
+      <h1 class="fade-up-2">Rent Your <span>Perfect Ride</span> Today</h1>
+      <p class="fade-up-3">Cars, bikes, scooters and SUVs at unbeatable prices. Book in seconds, drive instantly. No hidden fees, ever.</p>
+      <div class="hero-btns fade-up-4">
+        <a href="vehicles.html" class="btn btn-primary">Browse Vehicles →</a>
+        <a href="register.html" class="btn btn-outline">Get Started Free</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="stats-bar">
+    <div class="stat"><div class="stat-number">500+</div><div class="stat-label">Vehicles</div></div>
+    <div class="stat"><div class="stat-number">10K+</div><div class="stat-label">Happy Customers</div></div>
+    <div class="stat"><div class="stat-number">15+</div><div class="stat-label">Locations</div></div>
+    <div class="stat"><div class="stat-number">₹400</div><div class="stat-label">Starting Per Day</div></div>
+    <div class="stat"><div class="stat-number">24/7</div><div class="stat-label">Support</div></div>
+  </div>
+
+  <section class="section">
+    <div class="section-header">
+      <div class="section-tag">How It Works</div>
+      <h2>Three steps to your <span style="background:var(--gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">perfect ride</span></h2>
+      <p>Simple, fast, and transparent rental process</p>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">01</div>
+        <h3>Register & Login</h3>
+        <p>Create your free account with your driving license details. Takes less than 2 minutes.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">02</div>
+        <h3>Choose Your Vehicle</h3>
+        <p>Browse our wide selection of cars, bikes and SUVs. Filter by type, location and availability.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">03</div>
+        <h3>Book & Drive</h3>
+        <p>Select your dates, confirm the booking, and you're ready to hit the road. No paperwork!</p>
+      </div>
+      <div class="step">
+        <div class="step-num">04</div>
+        <h3>Return Easily</h3>
+        <p>When done, mark the return from your bookings dashboard. Simple and hassle-free.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <span class="footer-logo">🚗 DriveEase</span>
+    <p>Vehicle Renting System — Non-Relational Database Project</p>
+    <p style="margin-top:0.3rem;">Built with Flask + MongoDB &nbsp;·&nbsp; Python &nbsp;·&nbsp; PyMongo</p>
+  </footer>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>

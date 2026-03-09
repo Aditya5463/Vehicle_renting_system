@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Bookings — DriveEase</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body data-page="booking">
+  <nav>
+    <a class="nav-logo" href="index.html">🚗 DriveEase</a>
+    <div class="nav-links">
+      <a href="/">Home</a>
+      <a href="/">Vehicles</a>
+      <a href="/booking.html" class="active">My Bookings</a>
+      <span id="navUser" style="display:none;color:var(--text-muted);font-size:0.9rem;padding:0.5rem 1rem;"></span>
+      <a href="/login.html" id="navLogin">Login</a>
+      <a href="/register.html" class="btn-nav" id="navRegister">Sign Up</a>
+      <a href="#" class="btn-nav" id="navLogout" style="display:none" onclick="logout()">Logout</a>
+    </div>
+  </nav>
+
+  <section class="section">
+    <div class="section-header">
+      <div class="section-tag">Dashboard</div>
+      <h2>My <span style="background:var(--gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Bookings</span></h2>
+      <p>Manage your active and past vehicle rentals</p>
+    </div>
+
+    <div style="overflow-x:auto;">
+      <table class="bookings-table">
+        <thead>
+          <tr>
+            <th>Vehicle</th>
+            <th>Pickup Date</th>
+            <th>Return Date</th>
+            <th>Total Price</th>
+            <th>Status</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="bookingsBody">
+          <tr><td colspan="6"><div class="spinner"></div></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div style="margin-top:2rem;text-align:center;">
+      <a href="vehicles.html" class="btn btn-primary">+ Book Another Vehicle</a>
+    </div>
+  </section>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>
