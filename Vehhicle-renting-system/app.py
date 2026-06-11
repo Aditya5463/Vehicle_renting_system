@@ -1,4 +1,5 @@
 import os
+os.chdir(os.path.dirname(os.path.abspath(__file__)))
 from flask import Flask, send_from_directory, jsonify
 from flask_cors import CORS
 
